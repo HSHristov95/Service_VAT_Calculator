@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title id="title">VAT calculator</title>
+        <h1 id="first-title">VAT calculator</h1>
+        <p id="description"> Welcome to my VAT calculator. This calculator will help you calculate the VAT (Value added tax) for purchases/sales of physical goods or services.</p>
+    </head>
+    <hr>
+    <main>
+        <h2 id="second-title">Short description</h2>
+        <p id="second-text">This calculator will be used to calculate a VAT on a purchase. You will have to select:</p>
+        <ul>
+            <li>The country of origin;</li>
+            <li>The final country;</li>
+            <li>Name of the commodity - service or physical goods;</li>
+            <li>Amount of purchase;</li>
+            <li>Any other information.</li>
+        </ul>
+        <hr>
+        <form>
+            <fieldset>
+                <label for="country-of-origin">Enter country of origin <input id="country-of-origin" type="text" placeholder="Enter a country"></label>
+            </fieldset>
+            <fieldset>
+                <label for="country-of-final-destination">Enter final destination country <input id="country-of-final-destination" type="text" placeholder="Enter a country"></label></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropbox">
+                    <select id="option-select">Select your option:
+                        <option value="1">Goods</option>
+                        <option value="2">Services</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset id="amount">
+                <label for="price">Enter a price <input type="number" id="price" min="0.00" placeholder="Enter price"></label>
+            </fieldset>
+        </form>
+    </main>
+</html>
