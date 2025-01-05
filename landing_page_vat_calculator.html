@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
         <title id="title">VAT calculator</title>
         <h1 id="first-title">VAT calculator</h1>
         <p id="description"> Welcome to my VAT calculator. This calculator will help you calculate the VAT (Value added tax) for purchases/sales of physical goods or services.</p>
@@ -20,10 +21,10 @@
         <hr>
         <form>
             <fieldset>
-                <label for="country-of-origin">Enter country of origin <input id="country-of-origin" type="text" placeholder="Enter a country"></label>
+                <label for="country-of-origin">Enter country of origin <input id="country-of-origin" type="text" placeholder="Enter a country"></label> <button class="submit"> Submit</button>
             </fieldset>
             <fieldset>
-                <label for="country-of-final-destination">Enter final destination country <input id="country-of-final-destination" type="text" placeholder="Enter a country"></label></label>
+                <label for="country-of-final-destination">Enter final destination country <input id="country-of-final-destination" type="text" placeholder="Enter a country"></label></label> <button class="submit"> Submit</button>
             </fieldset>
             <fieldset>
                 <label for="dropbox">
@@ -31,13 +32,19 @@
                         <option value="1">Goods</option>
                         <option value="2">Services</option>
                     </select>
-                </label>
+                </label> <button class="submit"> Submit</button>
             </fieldset>
             <fieldset id="amount">
-                <label for="price">Enter a price <input type="number" id="price" min="0.00" placeholder="Enter price"></label>
+                <label for="price">Enter a price <input type="number" id="price" min="0.00" placeholder="Enter price"></label> <button class="submit"> Submit</button>
             </fieldset>
         </form>
         <hr>
+        <fieldset id="display-info">
+            <p id="display-country-of-origin">Your country of origin is</p>
+            <p id="display-final-destination">Your final destination is</p>
+            <p id="display-option">Your option is</p>
+            <p id="display-vat-tax">Your VAT will be</p>
+        </fieldset>
         <fieldset id="Additional-info">
             <h2>Links:</h2>
             <p id="BG-vat_law"><a href="https://lex.bg/laws/ldoc/2135533201" target="_blank">Bulgarian VAT Law</a></p>
