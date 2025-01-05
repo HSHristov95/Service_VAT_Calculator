@@ -1,0 +1,21 @@
+html{
+    width: 100%;
+    font-size: 15px;
+    background-color: azure;
+}
+
+fieldset{
+    border: none;
+}
+
+#first-title{
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+#description{
+    text-align: center;
+    font-size: 20px;
+    
+}
