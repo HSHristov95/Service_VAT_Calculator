@@ -6,6 +6,13 @@ eu_countries_list = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Cze
 total_price = 0
 vat = 0.2
 
+country_of_origin = input('Enter your country of origin: ')
+client_country = input('Enter client_country: ')
+
+while True:
+    if country_of_origin in eu_countries_list and client_country in eu_countries_list:
+        print('You will be doing interunion delivery. Your VAT will be 20%')
+        break
 
 option = input('Enter an option: ')
 
@@ -21,6 +28,6 @@ while True:
         print('Error! Try again!')
     else:
         print(f'Your VAT wi;; be 20%')
-        total_price = option_price * vat
-        print(f'Final price is {total_price}')
+        total_price = option_price + (option_price * vat)
+        print(f'Final price is {total_price} with VAT')
         break
