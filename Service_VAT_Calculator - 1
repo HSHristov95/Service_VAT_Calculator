@@ -4,18 +4,23 @@ eu_countries_list = ['Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Cze
 'Slovakia', 'Slovenia', 'Spain', 'Sweden']
 
 total_price = 0
-vat = 20
+vat = 0.2
 
 
 option = input('Enter an option: ')
 
-if option == 'end':
-    print('Thank you for your time!')
-    if option == 'goods':
+while True:
+    if option == 'end':
+        print('Thank you for your time!')
+        break
+
+    elif option == 'goods':
         option_price = float(input('Enter price: '))
+
     if option_price < 0:
         print('Error! Try again!')
     else:
-        print(f'Your {vat} is 20%')
+        print(f'Your VAT wi;; be 20%')
         total_price = option_price * vat
         print(f'Final price is {total_price}')
+        break
