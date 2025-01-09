@@ -1,15 +1,17 @@
 html{
     width: 100%;
     font-size: 15px;
-    background-color: azure;
+    color: black;
 }
 
 fieldset{
     border: none;
+    background-color: beige;
 }
 
 #first-title{
     font-size: 25px;
+    font-style: italic;
     text-align: center;
     color: black;
 }
@@ -17,5 +19,4 @@ fieldset{
 #description{
     text-align: center;
     font-size: 20px;
-    
 }
